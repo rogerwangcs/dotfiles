@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+- link:
+    ~/.bashrc-roger: bashrc-roger
+    ~/.bash-commands: bash-commands
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux.conf
+    ~/.hushlogin: hushlogin
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

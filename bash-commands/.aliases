@@ -1,0 +1,38 @@
+# Aliases by Roger 5/26/19
+alias config='/usr/bin/git --git-dir=$HOME/.git-dotfiles/ --work-tree=$HOME/'
+
+alias nvimconfig='nvim ~/.config/nvim/init.vim'
+alias tmuxconfig='nvim ./.tmux.conf.local'
+
+alias c='clear'
+alias avscode='function vscode(){ echo "Opening $1"; open -a "Visual Studio Code" $1; };vscode'
+
+# Tmux
+alias tmuxls='tmux list-sessions'
+alias tmuxat='function tmuxat(){ tmux attach -t $1 };tmuxat;'
+alias tmuxns='function tmuxns(){ tmux new -s $1 };tmuxns;'
+
+# Set vim to nvim;
+alias vi='nvim'
+alias vim='nvim'
+
+# Colorize the ls output
+alias ls='ls'
+# Use a long listing format
+alias ll='ls -la'
+# Show hidden files
+alias l.='ls -d .*'
+
+# get rid of command not found
+alias cd..='cd ..'
+
+# a quick way to get out of current directory
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+# Quick symlinks!
+alias linkme='function linkme() { ln -s "$(pwd)" ~/.symlinks/${PWD##*/}; echo "Linked current directory to ~./symlinks/${PWD##*/}" }; linkme'

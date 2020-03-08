@@ -1,0 +1,12 @@
+#add symlinks to CDPATH
+export CDPATH=~/.symlinks
+
+# Exports
+export PATH="$PATH:/usr/local/octave/3.8.0/bin"
+export PATH="/usr/local/anaconda3/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# This should be the last line of the file
+# For local changes
+# Don't make edits below this
+[ -f ".exports.local" ] && source ".exports.local"

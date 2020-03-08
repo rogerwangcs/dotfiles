@@ -1,0 +1,9 @@
+# Hide computer username
+export DEFAULT_USER="$(whoami)"
+# Set default editor
+export EDITOR=vim
+
+ #imports
+source $HOME/.bash-commands/.functions
+source $HOME/.bash-commands/.aliases
+source $HOME/.bash-commands/.exports

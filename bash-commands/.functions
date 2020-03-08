@@ -1,0 +1,9 @@
+# This line imports an OS specific functions file if one exists
+# Not been tested on any OS other than Mac OSX
+
+
+
+# This should be the last line of the file
+# For local changes
+# Don't make edits below this
+[ -f ".functions.local" ] && source ".functions.local"
