@@ -12,10 +12,6 @@ alias tmuxls='tmux list-sessions'
 alias tmuxat='function tmuxat(){ tmux attach -t $1 };tmuxat;'
 alias tmuxns='function tmuxns(){ tmux new -s $1 };tmuxns;'
 
-# Set vim to nvim;
-alias vi='nvim'
-alias vim='nvim'
-
 # Colorize the ls output
 alias ls='ls'
 # Use a long listing format

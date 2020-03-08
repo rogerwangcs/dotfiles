@@ -1,0 +1,30 @@
+# Roger Wang
+# 4/23/19
+
+[alias]
+  i = init
+  s = status
+  p = push
+  a = add
+  c = commit -m
+  b = branch
+
+  ra = remote add
+  po = push origin
+  co = checkout
+
+  pom = push origin master
+
+  tracked = ls-tree -r HEAD --name-only
+
+[url "https://github.com/"]
+    insteadOf = gh:
+[user]
+	name = Roger Wang
+	email = rogerwangcs@gmail.com
+[core]
+	excludesfile = /Users/rogerwang/.gitignore_global
+[status]
+	showUntrackedFiles = no
+[http]
+	postBuffer = 157286400
