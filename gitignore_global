@@ -3,6 +3,7 @@ Git Ignore Files
 # 4/23/19
 
 # dotfiles gitignore
+~./.vim/plugged/
 ~/.local/share/nvim/shada/main.shada
 ~/.oh-my-zsh
 
